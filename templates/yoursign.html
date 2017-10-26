@@ -1,0 +1,21 @@
+<!-- <body>
+<form action="http://localhost:5000/yoursigninfo" method="POST">
+<div>
+<label>What is your horoscope sign? Please make sure the first letter is capitalized. 
+<input type="text" name="sign" value="">
+</label>
+<input type="submit" value="Submit">
+</div>
+</form>
+</body>
+ -->
+
+{% block content %}
+  <h1>Your Horoscope Form!</h1>
+  <form method="POST" action="http://localhost:5000/yoursignformresults">
+      {{ form.hidden_tag() }}
+      {{ message }}
+      <p>{{ form.sign.label }}{{ form.sign() }}</p>
+      {{ form.submit() }}
+  </form>
+{% endblock %}

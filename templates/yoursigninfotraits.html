@@ -1,0 +1,132 @@
+{% set Aquarius = ['Aquiarius are creative'] %}
+{% set Pisces = ['Pisces are sensitive and reserved'] %}
+{% set Aries = ['Aries are independent and courageous'] %}
+{% set Taurus = ['Taurus are solid and fight for what they want'] %}
+{% set Gemini = ['Geminis are social butterflies'] %}
+{% set Cancer = ['Cancers are adventerous'] %}
+{% set Leo = ['Leos are very devoted'] %}
+{% set Virgo = ['Virgos are mind oriented'] %}
+{% set Libra = ['Libras are friendly and ambitious'] %}
+{% set Scorpio = ['Scorpios are very intense'] %}
+{% set Sagittarius = ['Sagittarius are positive and vibrant'] %}
+{% set Capricorn = ['Capricorns are ambitious'] %}
+
+<!-- http://iml.jou.ufl.edu/projects/fall07/Bhimani/thezodiac/zodiacsigns.html
+ -->
+
+{% set var = sign %}
+
+<h1> Your Sign is {{sign}}. Typically, </h1>
+
+{% if var == 'Aquarius' %}
+	<ul>
+		{% for yoursign in Aquarius %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Pisces" %}
+	<ul>
+		{% for yoursign in Pisces %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Aries" %}
+	<ul>
+		{% for yoursign in Aries %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Taurus" %}
+	<ul>
+		{% for yoursign in Taurus %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Gemini" %}
+	<ul>
+		{% for yoursign in Gemini %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Cancer" %}
+	<ul>
+		{% for yoursign in Cancer %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Leo" %}
+	<ul>
+		{% for yoursign in Leo %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Virgo" %}
+	<ul>
+		{% for yoursign in Virgo %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Libra" %}
+	<ul>
+		{% for yoursign in Libra %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Scorpio" %}
+	<ul>
+		{% for yoursign in Scorpio %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Sagittarius" %}
+	<ul>
+		{% for yoursign in Sagittarius %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% elif var == "Capricorn" %}
+	<ul>
+		{% for yoursign in Capricorn %}
+			<li>
+				{{ yoursign }}
+			</li>
+		{% endfor %}
+	</ul>
+
+
+{% else %}
+	<p> ERROR: You have not entered a correct Western horoscope sign. Please make sure all spelling is correct and that the first letter of your sign is capitalized. </p> 
+{% endif %}
